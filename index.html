@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #0e0e10;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .stream {
+      flex: 3;
+    }
+
+    .chat {
+      flex: 1;
+      min-width: 350px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="stream">
+      <iframe
+        src="https://player.kick.com/jenazad"
+        allow="autoplay; fullscreen"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="chat">
+      <iframe
+        src="https://www.twitch.tv/embed/baburubaburu/chat?parent=localhost">
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>
